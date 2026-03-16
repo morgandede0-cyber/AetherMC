@@ -1,6 +1,6 @@
 {
   "server": {
-    "name": "MedievalCraft",
+    "name": "MedievalCraft66",
     "ip": "88.185.36.70",
     "port": 51130
   },
@@ -33,5 +33,5 @@
     "disableDevtools": true
   },
   "news": [],
-  "configVersion": 3
+  "configVersion": 4
 }
