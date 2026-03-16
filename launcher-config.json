@@ -1,6 +1,6 @@
 {
   "server": {
-    "name": "AetherMC",
+    "name": "MedievalCraft",
     "ip": "88.185.36.70",
     "port": 51130
   },
@@ -33,5 +33,5 @@
     "disableDevtools": true
   },
   "news": [],
-  "configVersion": 2
+  "configVersion": 3
 }
