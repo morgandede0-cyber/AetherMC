@@ -28,7 +28,7 @@
     "visibleTabs": [
       "home"
     ],
-    "disableDevtools": false
+    "disableDevtools": true
   },
   "news": [],
   "configVersion": 16
