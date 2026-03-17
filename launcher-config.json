@@ -26,12 +26,11 @@
   },
   "playerConfig": {
     "visibleTabs": [
-      "home",
-      "news",
-      "versions"
+      "home"
     ],
     "disableDevtools": true
   },
   "news": [],
-  "configVersion": 29
+  "configVersion": 30,
+  "lastUpdated": "2026-03-17T22:40:55.578Z"
 }
