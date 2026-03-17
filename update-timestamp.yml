@@ -1,0 +1,53 @@
+name: 🕐 Inject lastUpdated timestamp
+
+# Se déclenche à chaque push sur main — peu importe ce qui a changé.
+# Écrit l'heure exacte du push dans launcher-config.json → lastUpdated.
+# Le launcher compare ce timestamp avec celui mémorisé au démarrage.
+# Si différent → UPDATE détecté côté joueur.
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  inject-timestamp:
+    runs-on: ubuntu-latest
+
+    # Évite les boucles infinies : ce workflow lui-même fait un commit,
+    # qui déclencherait un nouveau push → on l'ignore via [skip ci].
+    # GitHub Actions n'exécute pas les workflows déclenchés par son propre bot
+    # si le commit message contient [skip ci].
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # token avec droit d'écriture pour le commit final
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Inject lastUpdated into launcher-config.json
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
+          echo "Timestamp généré : $TIMESTAMP"
+
+          # Lire le JSON actuel, injecter lastUpdated, réécrire
+          node -e "
+            const fs   = require('fs');
+            const path = 'launcher-config.json';
+            const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+            data.lastUpdated = process.argv[1];
+            fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n', 'utf8');
+            console.log('lastUpdated mis à jour :', data.lastUpdated);
+          " "$TIMESTAMP"
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add launcher-config.json
+          # Ne commite que si le fichier a réellement changé
+          git diff --cached --quiet && echo "Rien à commiter" && exit 0
+          git commit -m "🕐 lastUpdated auto-inject [skip ci]"
+          git push
