@@ -1,38 +1,30 @@
 {
+  "lastUpdated": "2025-01-01T00:00:00.000Z",
+  "launcher": {
+    "name": "AetherMC",
+    "version": "1.0.0",
+    "logo": "assets/images/logo.png",
+    "background": "assets/backgrounds/bg-main.jpg",
+    "accentColor": "#00d4ff",
+    "accentSecondary": "#7c3aed"
+  },
   "server": {
-    "name": "MedievalCraft",
-    "ip": "88.185.36.70",
-    "port": 51130
+    "name": "AetherMC",
+    "ip": "127.0.0.1",
+    "port": 25565,
+    "autoConnect": true,
+    "motd": "Le serveur ultime t'attend.",
+    "website": "https://aethermc.fr",
+    "discord": "https://discord.gg/aethermc"
   },
   "minecraft": {
     "defaultVersion": "1.20.1",
     "modloader": "forge",
-    "modloaderVersion": "47.4.16"
+    "modloaderVersion": "47.4.16",
+    "allowedVersions": ["1.20.1"]
   },
-  "launcher": {
-    "rolesRepo": "morgandede0-cyber/AetherMC",
-    "modsRepo": "morgandede0-cyber/AetherMC",
-    "modsRepoVersioned": true,
-    "githubRepo": "morgandede0-cyber/AetherMC",
-    "githubToken": "",
-    "configRepo": "morgandede0-cyber/AetherMC",
-    "configFile": "launcher-config.json",
-    "configBranch": "main"
-  },
-  "maintenance": {
-    "enabled": false,
-    "message": "Maintenance en cours, revenez plus tard !",
-    "motd": "Le serveur est fermé temporairement."
-  },
-  "playerConfig": {
-    "visibleTabs": [
-      "home",
-      "news",
-      "versions"
-    ],
-    "disableDevtools": true
-  },
-  "news": [],
-  "configVersion": 41,
-  "lastUpdated": "2026-03-18T13:30:42.000Z"
+  "news": {
+    "apiUrl": "https://ton-site.fr/api/news",
+    "fallback": []
+  }
 }
