@@ -41,8 +41,7 @@
     "visibleTabs": [
       "home",
       "news",
-      "versions",
-      "setting",
+      "versions"
     ],
     "disableDevtools": true
   },
