@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T23:06:15.032Z",
+  "lastUpdated": "2026-03-18T23:06:27.147Z",
   "launcher": {
     "name": "AetherMC",
     "version": "1.0.0",
@@ -40,9 +40,10 @@
   "playerConfig": {
     "visibleTabs": [
       "home",
-      "news"
+      "news",
+      "versions"
     ],
     "disableDevtools": true
   },
-  "configVersion": 3
+  "configVersion": 4
 }
