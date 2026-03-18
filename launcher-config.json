@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T21:05:45.000Z",
+  "lastUpdated": "2026-03-18T21:21:00.157Z",
   "launcher": {
     "name": "AetherMC",
     "version": "1.0.0",
@@ -28,5 +28,14 @@
   "news": {
     "apiUrl": "https://ton-site.fr/api/news",
     "fallback": []
-  }
+  },
+  "playerConfig": {
+    "visibleTabs": [
+      "home",
+      "news",
+      "versions"
+    ],
+    "disableDevtools": true
+  },
+  "configVersion": 1
 }
