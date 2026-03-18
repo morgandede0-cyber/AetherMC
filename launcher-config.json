@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-01-01T00:00:00.000Z",
+  "lastUpdated": "2026-03-18T21:05:45.000Z",
   "launcher": {
     "name": "AetherMC",
     "version": "1.0.0",
@@ -21,7 +21,9 @@
     "defaultVersion": "1.20.1",
     "modloader": "forge",
     "modloaderVersion": "47.4.16",
-    "allowedVersions": ["1.20.1"]
+    "allowedVersions": [
+      "1.20.1"
+    ]
   },
   "news": {
     "apiUrl": "https://ton-site.fr/api/news",
