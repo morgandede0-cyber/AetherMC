@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T00:00:00.000Z",
+  "lastUpdated": "2026-03-18T22:32:25.000Z",
   "configVersion": 1,
   "launcher": {
     "name": "AetherMC",
@@ -13,7 +13,10 @@
     "rolesRepo": "morgandede0-cyber/AetherMC",
     "githubRepo": "morgandede0-cyber/AetherMC",
     "statusUrl": "https://raw.githubusercontent.com/morgandede0-cyber/AetherMC/main/status.json",
-    "playerVisibleTabs": ["home", "news"],
+    "playerVisibleTabs": [
+      "home",
+      "news"
+    ],
     "disableDevtoolsForPlayers": true
   },
   "server": {
@@ -29,7 +32,9 @@
     "defaultVersion": "1.20.1",
     "modloader": "forge",
     "modloaderVersion": "47.4.16",
-    "allowedVersions": ["1.20.1"]
+    "allowedVersions": [
+      "1.20.1"
+    ]
   },
   "news": {
     "apiUrl": "https://ton-site.fr/api/news",
