@@ -42,6 +42,7 @@
       "home",
       "news",
       "versions"
+      "setting"
     ],
     "disableDevtools": true
   },
