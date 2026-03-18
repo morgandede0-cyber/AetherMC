@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T22:59:17.000Z",
+  "lastUpdated": "2025-01-01T00:00:00.000Z",
   "launcher": {
     "name": "AetherMC",
     "version": "1.0.0",
@@ -22,9 +22,7 @@
     "defaultVersion": "1.20.1",
     "modloader": "forge",
     "modloaderVersion": "47.4.16",
-    "allowedVersions": [
-      "1.20.1"
-    ]
+    "allowedVersions": ["1.20.1"]
   },
   "news": {
     "apiUrl": "",
@@ -38,12 +36,8 @@
     ]
   },
   "playerConfig": {
-    "visibleTabs": [
-      "home",
-      "news",
-      "versions"
-    ],
+    "visibleTabs": ["home", "news", "versions", "settings"],
     "disableDevtools": true
   },
-  "configVersion": 4
+  "configVersion": 1
 }
