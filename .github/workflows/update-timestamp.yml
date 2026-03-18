@@ -50,4 +50,5 @@ jobs:
           # Ne commite que si le fichier a réellement changé
           git diff --cached --quiet && echo "Rien à commiter" && exit 0
           git commit -m "🕐 lastUpdated auto-inject [skip ci]"
+          git pull --rebase origin main
           git push
