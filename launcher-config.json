@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-20T21:39:48.000Z",
-  "configVersion": 2,
+  "lastUpdated": "2025-01-01T00:00:00.000Z",
+  "configVersion": 1,
   "launcher": {
     "name": "AetherMC",
     "version": "1.0.0",
@@ -16,7 +16,7 @@
   "servers": [
     {
       "id": 1,
-      "name": "MédievalCraft",
+      "name": "AetherMC SMP",
       "ip": "88.185.36.70",
       "port": 51130,
       "description": "Serveur survie moddé — Forge 1.20.1",
