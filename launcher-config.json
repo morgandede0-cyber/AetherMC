@@ -1,31 +1,53 @@
 {
-  "lastUpdated": "2026-03-18T23:37:37.000Z",
+  "lastUpdated": "2025-01-01T00:00:00.000Z",
+  "configVersion": 1,
+
   "launcher": {
     "name": "AetherMC",
     "version": "1.0.0",
     "logo": "assets/images/logo.png",
     "background": "assets/backgrounds/bg-main.jpg",
     "accentColor": "#00d4ff",
-    "accentSecondary": "#7c3aed"
+    "accentSecondary": "#7c3aed",
+
+    "githubRepo": "TON_USERNAME/aethermc-launcher",
+
+    "modsRepo": "morgandede0-cyber/AetherMC",
+    "modsRepoVersioned": true,
+
+    "rolesRepo": "morgandede0-cyber/AetherMC"
   },
+
   "server": {
     "name": "AetherMC",
-    "ip": "127.0.0.1",
-    "port": 25565,
-    "autoConnect": true,
-    "statusIp": null,
+    "ip": "88.185.36.70",
+    "port": 51130,
     "motd": "Le serveur ultime t'attend.",
     "website": "https://aethermc.fr",
-    "discord": "https://discord.gg/aethermc"
+    "discord": "https://discord.gg/aethermc",
+    "autoConnect": true,
+    "statusIp": ""
   },
+
   "minecraft": {
     "defaultVersion": "1.20.1",
     "modloader": "forge",
     "modloaderVersion": "47.4.16",
-    "allowedVersions": [
-      "1.20.1"
-    ]
+    "allowedVersions": ["1.20.1"]
   },
+
+  "maintenance": {
+    "enabled": false,
+    "message": "Maintenance en cours, revenez plus tard !",
+    "motd": "",
+    "kickDelay": 5
+  },
+
+  "playerConfig": {
+    "visibleTabs": ["home", "news"],
+    "disableDevtools": true
+  },
+
   "news": {
     "apiUrl": "",
     "items": [
@@ -36,15 +58,5 @@
         "date": "Aujourd'hui"
       }
     ]
-  },
-  "playerConfig": {
-    "visibleTabs": [
-      "home",
-      "news",
-      "versions",
-      "settings"
-    ],
-    "disableDevtools": true
-  },
-  "configVersion": 1
+  }
 }
