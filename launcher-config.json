@@ -1,7 +1,6 @@
 {
-  "lastUpdated": "2025-01-01T00:00:00.000Z",
+  "lastUpdated": "2026-03-20T20:10:22.000Z",
   "configVersion": 1,
-
   "launcher": {
     "name": "AetherMC",
     "version": "1.0.0",
@@ -9,15 +8,11 @@
     "background": "assets/backgrounds/bg-main.jpg",
     "accentColor": "#00d4ff",
     "accentSecondary": "#7c3aed",
-
     "githubRepo": "TON_USERNAME/aethermc-launcher",
-
     "modsRepo": "morgandede0-cyber/AetherMC",
     "modsRepoVersioned": true,
-
     "rolesRepo": "morgandede0-cyber/AetherMC"
   },
-
   "server": {
     "name": "AetherMC",
     "ip": "88.185.36.70",
@@ -28,26 +23,27 @@
     "autoConnect": true,
     "statusIp": ""
   },
-
   "minecraft": {
     "defaultVersion": "1.20.1",
     "modloader": "forge",
     "modloaderVersion": "47.4.16",
-    "allowedVersions": ["1.20.1"]
+    "allowedVersions": [
+      "1.20.1"
+    ]
   },
-
   "maintenance": {
     "enabled": false,
     "message": "Maintenance en cours, revenez plus tard !",
     "motd": "",
     "kickDelay": 5
   },
-
   "playerConfig": {
-    "visibleTabs": ["home", "news"],
+    "visibleTabs": [
+      "home",
+      "news"
+    ],
     "disableDevtools": true
   },
-
   "news": {
     "apiUrl": "",
     "items": [
