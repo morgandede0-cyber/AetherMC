@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-20T20:42:40.000Z",
-  "configVersion": 2,
+  "lastUpdated": "2025-01-01T00:00:00.000Z",
+  "configVersion": 1,
   "launcher": {
     "name": "AetherMC",
     "version": "1.0.0",
@@ -13,16 +13,17 @@
     "modsRepoVersioned": true,
     "rolesRepo": "morgandede0-cyber/AetherMC"
   },
-  "server": {
-    "name": "AetherMC",
-    "ip": "88.185.36.70",
-    "port": 51130,
-    "motd": "Le serveur ultime t'attend.",
-    "website": "https://aethermc.fr",
-    "discord": "https://discord.gg/aethermc",
-    "autoConnect": true,
-    "statusIp": ""
-  },
+  "servers": [
+    {
+      "id": 1,
+      "name": "AetherMC SMP",
+      "ip": "88.185.36.70",
+      "port": 51130,
+      "description": "Serveur survie moddé — Forge 1.20.1",
+      "type": "forge",
+      "version": "1.20.1"
+    }
+  ],
   "minecraft": {
     "defaultVersion": "1.20.1",
     "modloader": "forge",
@@ -40,8 +41,7 @@
   "playerConfig": {
     "visibleTabs": [
       "home",
-      "news",
-      "versions"
+      "news"
     ],
     "disableDevtools": true
   },
