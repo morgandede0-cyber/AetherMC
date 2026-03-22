@@ -1,3 +1,11 @@
 {
-  "players": {}
+  "players": {
+    "c6198dba801b4c41babf119266d50933": {
+      "username": "Hoxton661",
+      "uuid": "c6198dba801b4c41babf119266d50933",
+      "role": "admin",
+      "joinedAt": "2026-03-22T23:38:13.623Z",
+      "skinUrl": "https://textures.minecraft.net/texture/2f109e6727f2a68d18775d6a01aef2a7e989bcaf946a6764c09255d5d7ab6ea6"
+    }
+  }
 }
